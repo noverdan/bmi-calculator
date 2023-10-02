@@ -25,6 +25,7 @@ body{
 }
 #input-section{
     display: flex;
+    flex-direction: column;
     font-size: 1rem;
     font-weight: 500;
 }
@@ -81,6 +82,12 @@ body{
 }
 .btn:active {
     box-shadow: 2px 2px 2px #a5a5a5;
+}
+.null-handler {
+    display: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(214, 33, 33);
 }
 hr{
     visibility: hidden;

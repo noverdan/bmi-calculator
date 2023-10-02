@@ -3,6 +3,7 @@ const resultContainer = document.querySelector("#result-section")
 const divider = document.querySelector("hr")
 const score = document.querySelector("#score")
 const category = document.querySelector("#category")
+const nullHandler = document.querySelector(".null-handler")
 
 function getData(){
     const beratBadan = document.querySelector("#weight").value
@@ -23,8 +24,11 @@ btnHitung.addEventListener('click', function(event){
         console.log(bmiScore)
         console.log(bmiScore)
         showResult(bmiScore)
+        nullHandler.style.display = "none"
     }else{
-        console.log("kosong")
+        nullHandler.style.display = "block"
+        divider.style.visibility = "hidden"
+        resultContainer.style.visibility = "hidden"
     }
     
 })
