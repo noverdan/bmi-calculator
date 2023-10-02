@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Cek Body Mess Index (BMI) kamu</h1>
+        <h3>Masukan berat dan tinggi badan untuk mengetahui BMI kamu</h3>
+    </header>
+    <section id="input-section">
+        <form>
+            <div class="input-field">
+                <label for="weight">Berat badan (KG)</label>
+                <input type="number" name="weight" id="weight" placeholder="Masukan berat badan">
+            </div>
+            <div class="input-field">
+                <label for="height">Tinggi Badan (CM)</label>
+                <input type="number" name="height" id="height" placeholder="Masukan tinggi badan">
+            </div>
+            <button class="btn" id="btn-hitung">Hitung BMI</button>
+        </form>
+    </section>
+    <hr>
+    <section id="result-section">
+        <div class="result-container">
+            <h3>Body Mess Index (BMI) kamu</h3>
+            <h1 id="score">00</h1>
+        </div>
+        <div class="result-container">
+            <h3>Kamu masuk kedalam kategori</h3>
+            <h1 id="category">00</h1>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
